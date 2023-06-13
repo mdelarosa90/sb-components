@@ -34,3 +34,5 @@ export const MyLabel = ({
     <span className={`label ${size} text-${color} ${allCaps && 'text-capitalize'}`} style={{color: fontColor}}>{label}</span>
   )
 }
+
+export default MyLabel;
