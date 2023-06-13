@@ -10,7 +10,7 @@ const meta = {
     // More on how to position stories at: https://storybook.js.org/docs/react/configure/story-layout
     layout: 'fullscreen',
   },
-} satisfies Meta<typeof Page>;
+} as Meta<typeof Page>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -25,5 +25,5 @@ export const LoggedIn: Story = {
       name: /Log in/i,
     });
     await userEvent.click(loginButton);
-  },
+  }
 };

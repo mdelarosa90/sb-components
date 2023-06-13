@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import { MyLabel} from "../../components/MyLabel";
+import { MyLabel } from "../../components/MyLabel";
 
 const meta = {
   title: 'UI/MyLabel',
@@ -16,7 +16,7 @@ const meta = {
       control: 'color'
     }
   }
-} satisfies Meta<typeof MyLabel>;
+} as Meta<typeof MyLabel>;
 
 export default meta;
 
@@ -27,7 +27,7 @@ export const Basic: Story = {
     size: 'normal',
     label: 'Example label',
     color: 'primary',
-  },
+  }
 };
 
 export const AllCaps: Story = {
@@ -35,24 +35,24 @@ export const AllCaps: Story = {
     size: 'h1',
     label: 'Prueba All Caps',
     color: 'tertiary',
-    allCaps: true,
-  },
+    allCaps: true
+  }
 };
 
 export const Secondary: Story = {
   args: {
     size: 'h2',
     label: 'Prueba Secondary',
-    color: 'secondary',
-  },
+    color: 'secondary'
+  }
 };
 
 export const Terciary: Story = {
   args: {
     size: 'h3',
     label: 'Prueba Terciary',
-    color: 'tertiary',
-  },
+    color: 'tertiary'
+  }
 }
 
 export const CustomFontColor: Story = {
@@ -60,5 +60,5 @@ export const CustomFontColor: Story = {
     size: 'h2',
     label: 'Prueba Font',
     fontColor: '#999'
-  },
+  }
 }
